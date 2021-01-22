@@ -18,6 +18,8 @@ body {
   margin: 0 auto;
 }
 
+/* menu */
+
 .menu {
   display: flex;
   flex-direction: row;
@@ -25,7 +27,7 @@ body {
   margin-bottom: 36px;
 }
 
-.logo img {
+.menu .logo img {
   width: 90.6px;
   height: 26.9px;
   padding-top: 36.1px;
@@ -36,14 +38,16 @@ body {
   color: #111;
 }
 
-.link {
+.menu .link {
   margin-left: 112px;
   padding-top: 38px;
 }
 
-.link a {
+.menu .link a {
   padding-right: 30px;
 }
+
+/* chef */
 
 .chef {
   width: 940px;
@@ -51,6 +55,7 @@ body {
   background-color: #fbdfdb;
   border: 1px solid #fbdfdb;
   border-radius: 30px;
+  margin-bottom: 98px;
 }
 
 .chef img {
@@ -84,18 +89,13 @@ body {
   opacity: 0.7;
 }
 
-.info h2 {
-  margin-top: 50px;
-  margin-bottom: 20px;
-  font-size: 24px;
-  color: #111;
-  font-weight: bold;
-}
+/* cards */
 
 .cards {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 20px;
+  cursor: pointer;
 }
 
 .card img {
@@ -104,36 +104,20 @@ body {
   border-radius: 15px;
 }
 
-.text {
+.card .text {
   display: flex;
   flex-direction: column;
   margin-top: 20px;
 }
 
-#text_01 {
+.cards #text_01 {
   font-size: 18px;
   color: #111;
-  margin-bottom: 5px;
 }
 
-#text_02 {
+.cards #text_02 {
   font-size: 14px;
-  color: #777777;
-}
-
-footer {
-  margin-top: 50px;
-  height: 62px;
-  width: 100%px;
-  background-color: #eee;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-footer span {
-  font-size: 14px;
-  color: #999;
+  color: #777;
 }
 
 /* SOBRE */
@@ -159,57 +143,84 @@ footer span {
   margin-bottom: 20px;
 }
 
-/* modal */
+/* details */
 
-.modal-overlay {
-  background-color: rgba(0, 0, 0, 0.7);
-  width: 100%;
-  height: 100%;
-  position: fixed;
-  top: 0;
-  opacity: 0;
-  visibility: hidden;
-}
-
-.modal {
-  background-color: #fff;
-  width: 660px;
-  height: 413px;
-  margin: 25vh auto;
-  position: relative;
-  border-radius: 16px;
+.details {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-direction: column;
   text-align: center;
 }
 
-.modal-content img {
-  height: 200px;
-  width: 600px;
+.details img {
+  width: 940px;
+  height: 280px;
   border-radius: 15px;
+  margin-bottom: 50px;
 }
 
-.modal-content #text_01 {
+.details .text h3 {
+  font-size: 36px;
+  color: #111111;
+  margin-bottom: 4px;
+}
+
+.details .text p {
+  font-size: 20px;
+  color: #777;
+  margin-bottom: 50px;
+}
+
+/* ingredients */
+
+#list_text {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: baseline;
+}
+
+.list h3 {
   font-size: 24px;
+  margin-right: 8px;
   color: #111;
+  font-weight: bold;
 }
 
-.modal-content #text_02 {
-  font-size: 18px;
-  color: #777777;
-  margin-bottom: 60px;
-}
-
-.modal .close-modal {
-  font-size: 16px;
-  color: #999999;
+.list p {
+  font-weight: bold;
+  font-size: 12px;
+  color: #999;
   cursor: pointer;
 }
 
-/* modal active */
+.list_itens {
+  margin-bottom: 39px;
+}
 
-.modal-overlay.active {
-  opacity: 1;
-  visibility: visible;
+.list_itens li {
+  font-size: 18px;
+  color: #444;
+  line-height: 28px;
+}
+
+.list_itens span {
+  font-size: 18px;
+  color: #444;
+  line-height: 28px;
+}
+
+/* footer */
+
+footer {
+  margin-top: 50px;
+  height: 62px;
+  width: 100%;
+  background-color: #eee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer span {
+  font-size: 14px;
+  color: #999;
 }

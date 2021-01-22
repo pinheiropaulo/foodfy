@@ -1,0 +1,18 @@
+{
+  "name": "Foodfy",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/pinheiropaulo/foodfy.git",
+  "author": "Paulo Pinheiro <pauloprap57@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "nunjucks": "^3.2.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}
