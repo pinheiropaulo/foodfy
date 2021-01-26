@@ -1,11 +1,11 @@
-const express = require("express");
-const nunjucks = require("nunjucks");
-const path = require("path");
+import "dotenv/config";
+import express from "express";
+import nunjucks from "nunjucks";
+import path from "path";
 
-const data = require("./data");
+import data from "./data";
 
 const server = express();
-const port = 3333;
 
 server.use(express.static(path.join(__dirname, "public")));
 
@@ -47,6 +47,6 @@ server.get("/detalhes", (req, res) => {
   return res.render("detalhes", { receita });
 });
 
-server.listen(port, () => {
-  console.log(`Server is running http://localhost:${port}`);
+server.listen(process.env.PORT || 3000, () => {
+  console.log(`Server is running http://localhost:${process.env.PORT}`);
 });
