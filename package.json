@@ -5,8 +5,7 @@
   "author": "Paulo Pinheiro <pauloprap57@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "start": "nodemon server.js",
-    "dev": "nodemon --exec sucrase-node server.js"
+    "start:dev": "nodemon --exec sucrase-node ./src/server.js"
   },
   "dependencies": {
     "dotenv": "^8.2.0",

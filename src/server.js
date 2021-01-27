@@ -7,11 +7,11 @@ import data from "./data";
 
 const server = express();
 
-server.use(express.static(path.join(__dirname, "public")));
+server.use(express.static(path.join(__dirname, "..", "public")));
 
 server.set("view engine", "njk");
 
-nunjucks.configure("views", {
+nunjucks.configure("src/views", {
   express: server,
   autoescape: false,
   noCache: true,
