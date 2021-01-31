@@ -17,7 +17,6 @@ body {
   max-width: 940px;
   margin: 0 auto;
 }
-
 /* menu */
 
 .menu {
@@ -43,8 +42,8 @@ body {
   padding-top: 38px;
 }
 
-.menu .link a {
-  padding-right: 30px;
+.menu .link a + a {
+  padding-left: 30px;
 }
 
 /* chef */
