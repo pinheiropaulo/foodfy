@@ -47,6 +47,6 @@ server.get("/detalhes", (req, res) => {
   return res.render("detalhes", { receita });
 });
 
-server.listen(process.env.PORT || 3000, () => {
+server.listen(process.env.PORT || 3333, () => {
   console.log(`Server is running http://localhost:${process.env.PORT}`);
 });
