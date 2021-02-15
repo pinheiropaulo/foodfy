@@ -1,8 +1,8 @@
-{% extends "layout.njk" %}
+{% extends "recipes/layout.njk" %}
 {% block content %}
-  <section class="cards">
-    {% for item in items %}
-      <div class="card" id="{{ item.id}}">
+  <section class="cards_home">
+    {% for item in recipes %}
+      <div class="card_home" id="{{ item.id}}">
         <img src="{{ item.image }}" alt="Imagem de {{item.title}}"/>
         <div class="text">
           <span id="text_01">{{ item.title }}</span>
@@ -12,5 +12,4 @@
       </div>
     {% endfor %}
   </section>
-  <script src="/javascripts/script.js"></script>
 {% endblock %}

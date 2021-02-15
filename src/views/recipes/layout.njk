@@ -3,33 +3,34 @@
   <head>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <link rel="stylesheet" href="/stylesheets/style.css"/>
+    <link rel="stylesheet" href="styles/global.css"/>
+    <link rel="stylesheet" href="styles/recipes/style.css">
     <link rel="icon" href="/assets/food.ico" type="image/x-icon"/>
-    {% block head %}
-      <title>Foodfy</title>
-    {%endblock %}
+    <title>Foodfy</title>
   </head>
   <body>
-    <div id="container">
+    <main class="main_container">
       <header>
-        <div class="menu">
+        <div class="header_menu">
           <div class="logo">
             <a href="/">
               <img src="/assets/logo.png" alt="logo"/>
             </a>
           </div>
-          <div class="link">
+          <div class="links">
             <a href="/sobre">Sobre</a>
             <a href="/receitas">Receitas</a>
+            <a style="margin-left: 450px" href="/admin/recipes">Admin</a>
           </div>
         </div>
       </header>
       {% block content %}{% endblock %}
-    </div>
+    </main>
     <footer>
       <span>
         Todos direitos reservados, receitas Foodfy.
       </span>
     </footer>
+    <script src="/js/script.js"></script>
   </body>
 </html>

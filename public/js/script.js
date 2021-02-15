@@ -1,4 +1,4 @@
-const cards = document.querySelectorAll(".card");
+const cards = document.querySelectorAll(".card_home");
 
 for (let card of cards) {
   card.addEventListener("click", () => {
@@ -44,4 +44,13 @@ for (let c of getButton03) {
       visibility.style.display = "none";
     }
   });
+}
+
+const currentPage = location.pathname;
+const menuItems = document.querySelectorAll(".header_menu .links a");
+
+for (item of menuItems) {
+  if (currentPage.includes(item.getAttribute("href"))) {
+    item.classList.add("active");
+  }
 }

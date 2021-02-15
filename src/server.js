@@ -1,13 +1,18 @@
-import "dotenv/config";
-import express from "express";
-import nunjucks from "nunjucks";
-import path from "path";
+// require("dotenv/config");
+const express = require("express");
+const nunjucks = require("nunjucks");
+const methodOverride = require("method-override");
+const path = require("path");
 
-import data from "./data";
+const routes = require("./routes");
 
 const server = express();
 
+server.use(express.urlencoded({ extended: true }));
 server.use(express.static(path.join(__dirname, "..", "public")));
+server.use(methodOverride("_method"));
+
+server.use(routes);
 
 server.set("view engine", "njk");
 
@@ -16,35 +21,6 @@ nunjucks.configure("src/views", {
   autoescape: false,
   noCache: true,
   watch: true,
-});
-
-server.get("/", (req, res) => {
-  return res.render("home", { items: data });
-});
-
-server.get("/sobre", (req, res) => {
-  return res.render("sobre");
-});
-
-server.get("/receitas", (req, res) => {
-  return res.render("receitas", { items: data });
-});
-
-server.get("/detalhes", (req, res) => {
-  const receitas = [...data];
-  const id = req.query.id;
-
-  const receita = receitas.find((receita) => {
-    if (receita.id == id) {
-      return receita;
-    }
-  });
-
-  if (!receita) {
-    res.send("Receita Não Encontrada");
-  }
-
-  return res.render("detalhes", { receita });
 });
 
 server.listen(process.env.PORT || 3333, () => {

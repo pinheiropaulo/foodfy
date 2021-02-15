@@ -1,11 +1,11 @@
-{% extends "layout.njk" %}
+{% extends "recipes/layout.njk" %}
 {% block content %}
   <section class="details">
-    <img src="{{ receita.image }}" alt="Imagem de {{ receita.title }}"/>
+    <img src="{{ recipes.image }}" alt="Imagem de {{recipes.title}}"/>
     <div class="text">
-      <h3>{{ receita.title }}</h3>
+      <h3>{{ recipes.title }}</h3>
       <p>por
-        {{ receita.author }}</p>
+        {{ recipes.author }}</p>
     </div>
   </section>
   <section class="list">
@@ -14,16 +14,20 @@
       <p id="button_01">ESCONDER</p>
     </div>
     <div class="list_itens" id="visible_01">
-      <li>{{ receita.ingredients }}</li>
+      {% for ingredient in recipes.ingredients %}
+        <li>{{ ingredient }}</li>
+      {% endfor %}
     </div>
     <div id="list_text">
       <h3>Modo de preparo</h3>
       <p id="button_02">ESCONDER</p>
     </div>
     <div class="list_itens" id="visible_02">
-      <span>
-        {{ receita.preparation }}
-      </span>
+      {% for preparation in recipes.preparation %}
+        <span>
+          {{ preparation }}
+        </span>
+      {% endfor %}
     </div>
     <div id="list_text">
       <h3>Informações adicionais</h3>
@@ -31,9 +35,8 @@
     </div>
     <div class="list_itens" id="visible_03">
       <span>
-        {{ receita.information }}
+        {{ recipes.information }}
       </span>
     </div>
   </section>
-  <script src="/javascripts/script.js"></script>
 {% endblock %}

@@ -1,0 +1,143 @@
+/* header_menu */
+
+.header_menu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 36px;
+}
+
+.header_menu .logo img {
+  width: 90.6px;
+  height: 26.9px;
+  padding-top: 36.1px;
+}
+
+.header_menu a {
+  font-size: 18px;
+  color: #111;
+}
+
+.header_menu .links {
+  margin-left: 112px;
+  padding-top: 38px;
+}
+
+.header_menu .links a + a {
+  padding-left: 30px;
+}
+
+/* cards_home */
+
+.cards_home {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+  cursor: pointer;
+}
+
+.card_home img {
+  width: 300px;
+  height: 140px;
+  border-radius: 15px;
+}
+
+.card_home .text {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.card_home #text_01 {
+  font-size: 18px;
+  color: #111;
+  margin-bottom: 5px;
+}
+
+.card_home #text_02 {
+  font-size: 14px;
+  color: #777;
+}
+
+/* chef */
+
+.chef {
+  width: 940px;
+  height: 366px;
+  background-color: #fbdfdb;
+  border: 1px solid #fbdfdb;
+  border-radius: 30px;
+  margin-bottom: 98px;
+}
+
+.chef img {
+  float: right;
+  padding-right: 100px;
+  padding-top: 66px;
+}
+
+.chef .chef_text {
+  display: block;
+}
+
+.chef .chef_text h2 {
+  font-size: 32px;
+  max-width: 305px;
+  max-height: 38px;
+  margin-right: 117px;
+  margin-bottom: 10px;
+  margin-top: 117px;
+  margin-left: 60px;
+}
+
+.chef .chef_text p {
+  font-size: 18px;
+  font-weight: normal;
+  max-width: 316px;
+  max-height: 84px;
+  margin-right: 564px;
+  margin-bottom: 10px;
+  margin-left: 60px;
+  opacity: 0.7;
+}
+
+/* description */
+
+.description {
+  margin-top: 50px;
+}
+
+.description span {
+  font-size: 18px;
+  color: #444;
+  line-height: 28px;
+}
+
+.about h2 {
+  font-size: 24px;
+  color: #111;
+  margin-bottom: 20px;
+}
+
+.start h3 {
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+/* footer */
+
+footer {
+  margin-top: 50px;
+  height: 62px;
+  width: 100%;
+  background-color: #eee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 0;
+}
+
+footer span {
+  font-size: 14px;
+  color: #999;
+}
