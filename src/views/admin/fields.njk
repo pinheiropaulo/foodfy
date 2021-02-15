@@ -1,0 +1,46 @@
+<section class="form">
+  <div class="form_item">
+    <div class="form_item_title">Nome da Receita</div>
+    <div class="form_item_input">
+      <input type="text" name="title" placeholder="Nome da receita" value="{{recipes.title}}"/>
+    </div>
+  </div>
+  <div class="form_item">
+    <div class="form_item_title">Nome do Autor</div>
+    <div class="form_item_input">
+      <input type="text" name="author" placeholder="Nome do autor da receita" value="{{recipes.author}}"/>
+    </div>
+  </div>
+  <div class="form_item">
+    <div class="form_item_title">Imagem da receita</div>
+    <div class="form_item_input">
+      <input type="url" name="image" placeholder="Link da imagem da EX: https://" value="{{recipes.image}}"/>
+    </div>
+  </div>
+  <div class="form_item">
+    <div class="form_item_title">Ingredientes</div>
+    <div class="form_item_input">
+      <input type="text" name="ingredients" placeholder="ingredientes " value="{{recipes.ingredients[0]}}"/>
+    </div>
+    <div class="form_item_input">
+      <input type="text" name="ingredients" placeholder="ingredientes " value="{{recipes.ingredients[1]}}"/>
+    </div>
+  </div>
+  <div class="form_item">
+    <div class="form_item_title">Modo de preparo</div>
+    <div class="form_item_input">
+      <input type="text" name="preparation" placeholder="preparation" value="{{recipes.preparation[0]}}"/>
+    </div>
+    <div class="form_item_input">
+      <input type="text" name="preparation" placeholder="preparation" value="{{recipes.preparation[1]}}"/>
+    </div>
+  </div>
+  <div class="form_item">
+    <div class="form_item_title">Informações adicionais</div>
+    <div class="form_item_input info">
+      <textarea class="info" wrap="soft" name="information">
+        {{ recipes.information }}
+      </textarea>
+    </div>
+  </div>
+</section>

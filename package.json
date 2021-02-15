@@ -1,0 +1,23 @@
+{
+  "name": "foodfy",
+  "version": "1.0.0",
+  "repository": "https://github.com/pinheiropaulo/foodfy.git",
+  "author": "Paulo Pinheiro <pauloprap57@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "npm-run-all -p start:dev browsersync",
+    "start:dev": "nodemon ./src/server.js",
+    "browsersync": "browser-sync start --proxy http://localhost:3333 --files 'public,src/views'"
+  },
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "method-override": "^3.0.0",
+    "nunjucks": "^3.2.2"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.26.14",
+    "nodemon": "^2.0.7",
+    "npm-run-all": "^4.1.5"
+  }
+}
