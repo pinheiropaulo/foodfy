@@ -21,17 +21,23 @@
     <div class="form_item_title">Ingredientes</div>
     {% for ingredient in recipes.ingredients%}
       <div class="form_item_input">
-        <input type="text" name="ingredients" placeholder="ingredientes " value="{{ingredient}}"/>
+        <input type="text" name="ingredients" placeholder="Ingredientes " value="{{ingredient}}"/>
       </div>
     {% endfor %}
+    <div class="form_item_input">
+      <input type="text" name="ingredients" placeholder="Ingredientes " value="{{recipes.ingredients}}"/>
+    </div>
   </div>
   <div class="form_item">
     <div class="form_item_title">Modo de preparo</div>
     {% for preparation in recipes.preparation%}
       <div class="form_item_input">
-        <input type="text" name="preparation" placeholder="preparation" value="{{preparation}}"/>
+        <input type="text" name="preparation" placeholder="Preparação" value="{{preparation}}"/>
       </div>
     {% endfor %}
+    <div class="form_item_input">
+      <input type="text" name="preparation" placeholder="Preparação" value="{{recipes.preparation}}"/>
+    </div>
   </div>
   <div class="form_item">
     <div class="form_item_title">Informações adicionais</div>
