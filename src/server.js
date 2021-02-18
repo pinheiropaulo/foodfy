@@ -7,6 +7,7 @@ const path = require("path");
 const routes = require("./routes");
 
 const server = express();
+const port = process.env.PORT || 3333;
 
 server.use(express.urlencoded({ extended: true }));
 server.use(express.static(path.join(__dirname, "..", "public")));
@@ -20,9 +21,8 @@ nunjucks.configure("src/views", {
   express: server,
   autoescape: false,
   noCache: true,
-  watch: true,
 });
 
-server.listen(process.env.PORT || 3333, () => {
-  console.log(`Server is running http://localhost:${process.env.PORT}`);
+server.listen(port, () => {
+  console.log(`Server is running http://localhost:${port}`);
 });
