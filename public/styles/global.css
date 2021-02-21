@@ -18,6 +18,7 @@ body {
 .main_container {
   max-width: 940px;
   margin: 0 auto;
+  height: 100vh;
 }
 
 .main_container .title {
