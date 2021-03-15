@@ -14,20 +14,24 @@
       <p id="button_01">ESCONDER</p>
     </div>
     <div class="list_itens" id="visible_01">
-      {% for ingredient in recipes.ingredients %}
-        <li>{{ ingredient }}</li>
-      {% endfor %}
+      <ul>
+        {% for ingredient in recipes.ingredients %}
+          <li>{{ ingredient }}</li>
+        {% endfor %}
+      </ul>
     </div>
     <div id="list_text">
       <h3>Modo de preparo</h3>
       <p id="button_02">ESCONDER</p>
     </div>
     <div class="list_itens" id="visible_02">
-      {% for preparation in recipes.preparation %}
-        <span>
-          {{ preparation }}
-        </span>
-      {% endfor %}
+      <ul>
+        {% for preparation in recipes.preparation %}
+          <li>
+            {{ preparation }}
+          </li>
+        {% endfor %}
+      </ul>
     </div>
     <div id="list_text">
       <h3>Informações adicionais</h3>

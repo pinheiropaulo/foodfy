@@ -1,0 +1,70 @@
+/* form */
+
+.form .form_item_title {
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.form_item div {
+  color: #111;
+  font-weight: bold;
+}
+
+.form_save {
+  margin-top: 20px;
+}
+
+input {
+  font-size: 16px;
+  color: #111;
+  line-height: 24px;
+}
+
+input::placeholder {
+  font-size: 16px;
+  color: #111;
+}
+
+.form .form_item input {
+  width: 900px;
+  height: 49px;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.form_item_input + div {
+  margin-top: 10px;
+}
+
+.form_item .form_add_item {
+  margin-top: 15px;
+}
+
+.form_item .form_add_item a {
+  color: #6558c3;
+  text-align: right;
+}
+
+textarea {
+  resize: none;
+  font-size: 16px;
+  color: #111;
+  font-family: "Roboto", sans-serif;
+}
+
+textarea::placeholder {
+  resize: none;
+  font-size: 16px;
+  color: #111;
+}
+
+.form_item .info textarea {
+  height: 257px;
+  width: 940px;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}

@@ -1,6 +1,6 @@
 {% extends "admin/layout.njk" %}
 {% block content %}
-  <div class="title">
+  <div class="admin_title">
     <h1>Receita:
       {{ recipes.title }}</h1>
     <div class="buttons">
@@ -22,19 +22,23 @@
       <h3>Ingredientes</h3>
     </div>
     <div class="list_itens" id="visible_01">
-      {% for ingredient in recipes.ingredients %}
-        <li>{{ ingredient }}</li>
-      {% endfor %}
+      <ul>
+        {% for ingredient in recipes.ingredients %}
+          <li>{{ ingredient }}</li>
+        {% endfor %}
+      </ul>
     </div>
     <div id="list_text">
       <h3>Modo de preparo</h3>
     </div>
     <div class="list_itens" id="visible_02">
-      {% for preparation in recipes.preparation %}
-        <span>
-          {{ preparation }}
-        </span>
-      {% endfor %}
+      <ul>
+        {% for preparation in recipes.preparation %}
+          <li>
+            {{ preparation }}
+          </li>
+        {% endfor %}
+      </ul>
     </div>
     <div id="list_text">
       <h3>Informações adicionais</h3>

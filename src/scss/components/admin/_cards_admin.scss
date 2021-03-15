@@ -1,0 +1,44 @@
+/* cards_admin */
+
+.cards_admin {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 20px;
+  cursor: pointer;
+}
+
+.card_admin img {
+  width: 172px;
+  height: 80px;
+  border-radius: 8px;
+}
+
+.card_admin {
+  display: flex;
+  align-items: center;
+}
+
+.card_admin .text {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+}
+
+.cards_admin #text_01 {
+  font-size: 18px;
+  color: #111;
+  margin-bottom: 5px;
+}
+
+.cards_admin #text_02 {
+  font-size: 14px;
+  color: #777;
+}
+
+.cards_admin a {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #6558c3;
+  font-weight: bold;
+}

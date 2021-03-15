@@ -23,6 +23,3 @@ routes.put("/admin/recipes", AdminController.put); // Editar uma receita
 routes.delete("/admin/recipes", AdminController.delete); // Deletar uma receita
 
 module.exports = routes;
-
-// routes.put("/admin/recipes", recipes.put); // Editar uma receita
-// routes.delete("/admin/recipes", recipes.delete); // Deletar uma receita

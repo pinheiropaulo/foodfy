@@ -1,0 +1,26 @@
+/* buttons */
+
+.buttons {
+  margin-top: 50px;
+
+  button {
+    font-size: 16px;
+    color: #fff;
+    text-align: right;
+    border-radius: 4px;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  #delete {
+    width: 92px;
+    height: 37px;
+    background-color: #dc4747;
+  }
+
+  #save {
+    width: 139px;
+    height: 37px;
+    background-color: #6558c3;
+  }
+}
