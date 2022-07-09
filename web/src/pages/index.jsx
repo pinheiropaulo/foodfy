@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import BannerChef from './components/BannerChef';
 import Header from './components/Header';
 
 export default function Home() {
@@ -8,6 +9,7 @@ export default function Home() {
         <title>Foodfy</title>
       </Head>
       <Header />
+      <BannerChef />
     </div>
   );
 }
