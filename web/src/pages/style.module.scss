@@ -4,3 +4,18 @@
   gap: 20px;
   cursor: pointer;
 }
+
+.footer {
+  margin-top: 50px;
+  height: 62px;
+  background-color: #eee;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  span {
+    font-size: 14px;
+    color: #999;
+  }
+}

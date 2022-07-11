@@ -21,6 +21,11 @@ export default function Home() {
           <Card key={item.id} item={item} />
         ))}
       </section>
+      <footer>
+        <div className={styles.footer}>
+          <span>Todos direitos reservados, receitas Foodfy.</span>
+        </div>
+      </footer>
     </>
   );
 }
