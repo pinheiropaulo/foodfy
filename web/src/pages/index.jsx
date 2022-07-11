@@ -6,22 +6,21 @@ import { Header } from '../components/Header';
 
 import styles from './style.module.scss';
 
+import data from '../assets/data.json';
+
 export default function Home() {
   return (
-    <div>
+    <>
       <Head>
         <title>Foodfy</title>
       </Head>
       <Header />
       <BannerChef />
       <section className={styles.cards_home}>
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
+        {data.recipes.map((item) => (
+          <Card key={item.id} item={item} />
+        ))}
       </section>
-    </div>
+    </>
   );
 }

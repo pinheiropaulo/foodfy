@@ -1,21 +1,13 @@
-import Image from 'next/image';
-
-import Burger from '../../assets/burger.png';
-
 import styles from './style.module.scss';
 
-export function Card() {
+export function Card(props) {
   return (
     <div className={styles.card}>
-      <Image
-        src={Burger}
-        alt="Imagem de Triplo bacon burger"
-        width={300}
-        height={140}
-      />
+      <img src={props.item.image} alt={`Imagem de ${props.item.name}`} />
+
       <div className={styles.text}>
-        <span className={styles.name}>Triplo bacon burger</span>
-        <span className={styles.author}>porJorge Relato</span>
+        <span className={styles.name}>{props.item.title}</span>
+        <span className={styles.author}>por {props.item.author}</span>
       </div>
     </div>
   );
