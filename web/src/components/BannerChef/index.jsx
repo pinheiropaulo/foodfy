@@ -2,9 +2,9 @@ import Image from 'next/image';
 
 import styles from './style.module.scss';
 
-export default function BannerChef() {
+export function BannerChef() {
   return (
-    <div className={styles.chef}>
+    <div className={styles.banner_chef_container}>
       <div className={styles.chef_text}>
         <h2>As melhores receitas</h2>
         <p>

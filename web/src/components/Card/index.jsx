@@ -1,10 +1,10 @@
 import Image from 'next/image';
 
-import Burger from '../../../assets/burger.png';
+import Burger from '../../assets/burger.png';
 
 import styles from './style.module.scss';
 
-export default function Card() {
+export function Card() {
   return (
     <div className={styles.card}>
       <Image

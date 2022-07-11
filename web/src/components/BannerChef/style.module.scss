@@ -1,4 +1,4 @@
-.chef {
+.banner_chef_container {
   display: flex;
 
   align-items: center;
@@ -13,14 +13,6 @@
 
   border-radius: 30px;
   margin-bottom: 98px;
-
-  .chef_img {
-    width: 215px;
-    height: 300px;
-
-    margin-top: 66px;
-    margin-right: 100px;
-  }
 
   .chef_text {
     height: 110px;
@@ -37,5 +29,13 @@
       margin-top: 10px;
       opacity: 0.7;
     }
+  }
+
+  .chef_img {
+    width: 215px;
+    height: 300px;
+
+    margin-top: 66px;
+    margin-right: 100px;
   }
 }

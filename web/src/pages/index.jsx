@@ -1,7 +1,8 @@
 import Head from 'next/head';
-import BannerChef from './components/BannerChef';
-import Header from './components/Header';
-import Card from './components/Card';
+
+import { BannerChef } from '../components/BannerChef';
+import { Card } from '../components/Card';
+import { Header } from '../components/Header';
 
 import styles from './style.module.scss';
 

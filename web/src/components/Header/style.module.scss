@@ -19,12 +19,12 @@
     margin-left: 112px;
     padding-top: 38px;
 
-    a + a {
-      padding-left: 30px;
+    :first-child {
+      padding-right: 30px;
     }
 
     :last-child {
-      margin-left: 450px;
+      margin-left: 480px;
     }
   }
 }
